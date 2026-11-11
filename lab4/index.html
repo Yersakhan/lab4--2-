@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Git жүйесіндегі тармақтармен жұмыс істеуге арналған зертханалық жұмыс.">
+  <title>Зертханалық жұмыс №4 — Git тармақтары</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Басты бет">
+      <span class="brand-mark">G</span><span>GIT<span class="brand-muted"> / LAB</span></span>
+    </a>
+    <nav aria-label="Негізгі навигация">
+      <a href="#goal">Мақсаты</a><a href="#steps">Тапсырмалар</a><a href="#report">Есеп</a>
+    </nav>
+    <a class="top-button" href="#steps">Жұмысты бастау <span>↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> ЗЕРТХАНАЛЫҚ-ПРАКТИКАЛЫҚ ЖҰМЫС №4</div>
+        <h1>Git тармақтарымен<br><span>сенімді жұмыс.</span></h1>
+        <p class="hero-text">Тармақ құруды, өзгерістерді біріктіруді және қақтығыстарды шешуді тәжірибе жүзінде үйреніңіз.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#steps">Тапсырмаға өту <span>→</span></a>
+          <a class="secondary-button" href="#goal">Жұмыс мақсаты</a>
+        </div>
+        <div class="hero-meta"><span>⌘ Git негіздері</span><i></i><span>Шамамен 30–45 минут</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="terminal">
+          <div class="terminal-head"><div class="window-dots"><b></b><b></b><b></b></div><span>TERMINAL — git</span><span class="terminal-menu">•••</span></div>
+          <div class="terminal-body">
+            <div><span class="prompt">➜</span> <span class="path">project</span> git branch</div>
+            <div class="branch-line"><span class="green">*</span> main</div>
+            <div class="branch-line muted">feature-a</div>
+            <div class="branch-line muted">feature-b</div>
+            <div class="spacer-line"></div>
+            <div><span class="prompt">➜</span> <span class="path">project</span> git merge feature-a</div>
+            <div class="success">✓ Тармақ сәтті біріктірілді</div>
+            <div class="cursor-line"><span class="prompt">➜</span> <span class="cursor"></span></div>
+          </div>
+        </div>
+        <div class="float-card float-top"><span class="float-icon">⑂</span><div><strong>3 тармақ</strong><small>main · feature-a · feature-b</small></div></div>
+        <div class="float-card float-bottom"><span class="check-icon">✓</span><div><strong>Нәтиже дайын</strong><small>Өзгерістер сақталды</small></div></div>
+      </div>
+      <div class="hero-index">04 <span>/ 06</span></div>
+    </section>
+
+    <section class="stats" aria-label="Жұмыс туралы">
+      <div><strong>06</strong><span>негізгі бөлім</span></div>
+      <div><strong>12+</strong><span>Git командасы</span></div>
+      <div><strong>01</strong><span>тәжірибелік жоба</span></div>
+      <div class="stats-note">Кодты басқару —<br><b>тәртіптен басталады.</b></div>
+    </section>
+
+    <section class="section goal-section" id="goal">
+      <div class="section-label">01 / ЖҰМЫСТЫҢ БАҒЫТЫ</div>
+      <div class="goal-grid">
+        <div><h2>Бүгін не<br><span>үйренесіз?</span></h2></div>
+        <div class="goal-content">
+          <p>Жұмыстың мақсаты — Git жүйесінде тармақтармен жұмыс істеуді меңгеру: жаңа тармақ құру, олардың арасында ауысу, тармақтарды біріктіру және біріктіру кезіндегі қақтығыстарды шешу.</p>
+          <div class="goal-tags"><span>Git</span><span>Branch</span><span>Merge</span><span>Conflict</span></div>
+        </div>
+      </div>
+      <div class="requirements">
+        <div class="req-icon">⌘</div><div><b>Қажетті бағдарламалар</b><p>Компьютерде Git орнатылған болуы керек. Командаларды орындау үшін терминал және файлдарды өңдеу үшін Visual Studio Code немесе басқа мәтіндік редактор қажет.</p></div>
+      </div>
+    </section>
+
+    <section class="section steps-section" id="steps">
+      <div class="section-label">02 / ТӘЖІРИБЕЛІК БӨЛІМ</div>
+      <div class="section-heading"><div><h2>Жұмысты <span>кезең-кезеңімен</span><br>орындаңыз.</h2></div><p>Әр кезеңді ретімен орындап, командаларды терминалға енгізіңіз. Дайын болған қадамдарды белгілеп отырыңыз.</p></div>
+      <div class="progress-wrap"><div class="progress-info"><span>Орындалу барысы</span><b id="progressText">0 / 6 бөлім</b></div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div></div>
+
+      <div class="step-list">
+        <article class="step-card" data-step="1">
+          <div class="step-number">01</div><div class="step-main">
+            <div class="step-title-row"><div><span class="step-kicker">БІРІНШІ КЕЗЕҢ</span><h3>Репозиторийді дайындау</h3></div><label class="done-control"><input type="checkbox" class="step-check"><span>Дайын</span></label></div>
+            <p>Жаңа Git репозиторийін жасап, бастапқы README.md файлын сақтаңыз.</p>
+            <div class="code-block"><div class="code-head"><span>TERMINAL</span><button class="copy-btn" type="button">Көшіру <span>▢</span></button></div><pre><code>git init my-branching-repo
+cd my-branching-repo
+echo "# Менің Git жобам" &gt; README.md
+git add README.md
+git commit -m "Initial commit"</code></pre></div>
+            <div class="tip"><span>i</span><p><b>Ескерту:</b> Егер Git пайдаланушы аты мен электрондық поштаны сұраса, алдымен <code>git config --global user.name</code> және <code>git config --global user.email</code> параметрлерін орнатыңыз.</p></div>
+          </div>
+        </article>
+
+        <article class="step-card" data-step="2">
+          <div class="step-number">02</div><div class="step-main">
+            <div class="step-title-row"><div><span class="step-kicker">ЕКІНШІ КЕЗЕҢ</span><h3>Тармақтар құру және жұмыс істеу</h3></div><label class="done-control"><input type="checkbox" class="step-check"><span>Дайын</span></label></div>
+            <p><code>feature-a</code> және <code>feature-b</code> атты екі тармақ құрып, әрқайсысына жеке файл қосыңыз.</p>
+            <div class="code-block"><div class="code-head"><span>FEATURE-A ТАРМАҒЫ</span><button class="copy-btn" type="button">Көшіру <span>▢</span></button></div><pre><code>git switch -c feature-a
+echo "Бұл — A мүмкіндігі" &gt; feature-a.txt
+git add feature-a.txt
+git commit -m "Added feature-a.txt"</code></pre></div>
+            <div class="code-block"><div class="code-head"><span>FEATURE-B ТАРМАҒЫ</span><button class="copy-btn" type="button">Көшіру <span>▢</span></button></div><pre><code>git switch main
+git switch -c feature-b
+echo "Бұл — B мүмкіндігі" &gt; feature-b.txt
+git add feature-b.txt
+git commit -m "Added feature-b.txt"</code></pre></div>
+            <div class="tip"><span>!</span><p>Егер бастапқы тармақтың атауы <code>master</code> болса, командалардағы <code>main</code> сөзінің орнына <code>master</code> деп жазыңыз.</p></div>
+          </div>
+        </article>
+
+        <article class="step-card" data-step="3">
+          <div class="step-number">03</div><div class="step-main">
+            <div class="step-title-row"><div><span class="step-kicker">ҮШІНШІ КЕЗЕҢ</span><h3>Тармақтарды біріктіру</h3></div><label class="done-control"><input type="checkbox" class="step-check"><span>Дайын</span></label></div>
+            <p>Негізгі тармаққа қайта ауысып, екі тармақтың өзгерістерін біріктіріңіз. Содан кейін коммиттер тарихын қараңыз.</p>
+            <div class="code-block"><div class="code-head"><span>TERMINAL</span><button class="copy-btn" type="button">Көшіру <span>▢</span></button></div><pre><code>git switch main
+git merge feature-a
+git log --oneline --graph
+git merge feature-b</code></pre></div>
+            <div class="tip"><span>i</span><p>Біріктіру кезінде Git өзгерістерді негізгі тармаққа қосады. <code>git log --oneline --graph</code> командасы коммиттер тарихын график түрінде көрсетеді.</p></div>
+          </div>
+        </article>
+
+        <article class="step-card" data-step="4">
+          <div class="step-number">04</div><div class="step-main">
+            <div class="step-title-row"><div><span class="step-kicker">ТӨРТІНШІ КЕЗЕҢ</span><h3>Қақтығысты әдейі туындату</h3></div><label class="done-control"><input type="checkbox" class="step-check"><span>Дайын</span></label></div>
+            <p>Бір файлға екі тармақтан бөлек өзгеріс енгізіп, оларды біріктіргенде туындайтын қақтығысты бақылаңыз.</p>
+            <div class="code-block"><div class="code-head"><span>FEATURE-A ТАРМАҒЫНДА</span><button class="copy-btn" type="button">Көшіру <span>▢</span></button></div><pre><code>git switch feature-a
+echo "A тармағындағы өзгеріс" &gt;&gt; feature-a.txt
+git add feature-a.txt
+git commit -m "Updated feature-a.txt"</code></pre></div>
+            <div class="code-block"><div class="code-head"><span>MAIN ТАРМАҒЫНДА</span><button class="copy-btn" type="button">Көшіру <span>▢</span></button></div><pre><code>git switch main
+echo "Негізгі тармақтағы өзгеріс" &gt;&gt; feature-a.txt
+git add feature-a.txt
+git commit -m "Updated feature-a.txt in main"
+git merge feature-a</code></pre></div>
+            <div class="tip warning"><span>!</span><p>Git қақтығыс туралы хабарласа, бұл — осы кезеңде күтілетін жағдай. Қақтығыс бір файлдың бір бөлігіне екі тармақтан сәйкес келмейтін өзгерістер енгізілгенде пайда болады.</p></div>
+          </div>
+        </article>
+
+        <article class="step-card" data-step="5">
+          <div class="step-number">05</div><div class="step-main">
+            <div class="step-title-row"><div><span class="step-kicker">БЕСІНШІ КЕЗЕҢ</span><h3>Қақтығысты шешу және тармақтарды жою</h3></div><label class="done-control"><input type="checkbox" class="step-check"><span>Дайын</span></label></div>
+            <p>Қақтығыс болған файлды ашып, қажет өзгерістерді қалдырыңыз. Арнайы белгілерді алып тастап, біріктіруді аяқтаңыз.</p>
+            <div class="code-block"><div class="code-head"><span>ҚАҚТЫҒЫСТЫ ШЕШУ</span><button class="copy-btn" type="button">Көшіру <span>▢</span></button></div><pre><code># feature-a.txt файлын редакторда түзетіңіз
+git add feature-a.txt
+git commit -m "Resolved conflict in feature-a.txt"</code></pre></div>
+            <p class="subtle-text">Файл ішіндегі <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code> және <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> белгілерін жойып, сақталуы тиіс мәтінді қалдырыңыз.</p>
+            <div class="code-block"><div class="code-head"><span>ТАРМАҚТАРДЫ ЖОЮ</span><button class="copy-btn" type="button">Көшіру <span>▢</span></button></div><pre><code>git branch -d feature-a
+git branch -d feature-b</code></pre></div>
+            <div class="tip"><span>i</span><p>Тармақты жою үшін ол басқа тармаққа біріктірілген болуы керек. Егер Git жоюға рұқсат бермесе, алдымен тармақтың біріктірілгенін тексеріңіз.</p></div>
+          </div>
+        </article>
+
+        <article class="step-card" data-step="6">
+          <div class="step-number">06</div><div class="step-main">
+            <div class="step-title-row"><div><span class="step-kicker">АЛТЫНШЫ КЕЗЕҢ</span><h3>Соңғы тексеру</h3></div><label class="done-control"><input type="checkbox" class="step-check"><span>Дайын</span></label></div>
+            <p>Репозиторийдің күйін және коммиттер тарихын тексеріңіз. Өзгерістердің дұрыс сақталғанына көз жеткізіңіз.</p>
+            <div class="code-block"><div class="code-head"><span>TERMINAL</span><button class="copy-btn" type="button">Көшіру <span>▢</span></button></div><pre><code>git status
+git log --oneline --graph</code></pre></div>
+            <div class="success-panel"><span>✓</span><div><b>Жұмыс аяқталды!</b><p>Репозиторийдің күйі таза, барлық қажетті өзгерістер сақталған болуы керек.</p></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section report-section" id="report">
+      <div class="section-label">03 / ҚОРЫТЫНДЫ</div>
+      <div class="report-grid">
+        <div><h2>Есепті<br><span>дайындаңыз.</span></h2><p class="report-intro">Зертханалық жұмысты аяқтаған соң, орындалған әрекеттерді қысқаша сипаттап, дәлел ретінде скриншоттарды тіркеңіз.</p></div>
+        <div class="report-list">
+          <div><span>01</span><p>Орындалған Git командалары мен әрекеттердің сипаттамасы.</p></div>
+          <div><span>02</span><p>Тармақ құру, біріктіру және қақтығысты шешу кезеңдерінің скриншоттары.</p></div>
+          <div><span>03</span><p>Жұмыс барысында кездескен мәселелер және оларды шешу жолдары.</p></div>
+        </div>
+      </div>
+      <div class="final-banner"><div><span class="banner-label">КҮТІЛЕТІН НӘТИЖЕ</span><h3>Тармақтарды басқарыңыз.<br><span>Өзгерістерді сенімді біріктіріңіз.</span></h3></div><div class="banner-symbol">⑂</div></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">G</span><span>GIT<span class="brand-muted"> / LAB</span></span></a><span>Зертханалық жұмыс №4 · Git тармақтары</span><a href="#home" class="back-top">Жоғарыға ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">Команда көшірілді</div>
+  <script src="script.js"></script>
+</body>
+</html>
